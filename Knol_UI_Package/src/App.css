@@ -1,0 +1,350 @@
+#knol-categoryTab .App {
+  text-align: center;
+}
+
+#knol-categoryTab .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #knol-categoryTab .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+#knol-categoryTab .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#knol-categoryTab .App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#knol-categoryTab .knol_image {
+  transition: transform .4s !important;
+  width: 60px !important;
+  margin: 0;
+  cursor: pointer !important;
+}
+
+#knol-categoryTab .knol_image:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* Login Page Styles */
+#knol-categoryTab .login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #f0f0f0;
+  font-family: 'ProximaNovaRegular';
+}
+
+#knol-categoryTab .login-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+#knol-categoryTab .login-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  /* Centers the text */
+  text-align: center;
+}
+
+#knol-categoryTab.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+#knol-categoryTab .login-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+  text-align: left;
+}
+
+#knol-categoryTab .login-input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#knol-categoryTab .error-message {
+  color: red;
+  font-size: 0.85em;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+#knol-categoryTab .login-button {
+  background-color: #153c74;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#knol-categoryTab .login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+#knol-categoryTab .login-button:hover {
+  background-color: #0d2a57;
+}
+
+#knol-categoryTab .remember-me {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+}
+
+#knol-categoryTab .remember-checkbox {
+  margin-right: 5px;
+}
+
+#knol-categoryTab .forgot-password {
+  color: #1a73e8;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#knol-categoryTab .dx-popup-wrapper {
+  background: transparent;
+  box-shadow: none !important;
+  ;
+}
+
+#knol-categoryTab .dx-tabs-wrapper {
+  text-align: left !important;
+  position: relative;
+  display: flex;
+  background-color: #f7f7f7;
+  -webkit-border-before: 1px solid transparent;
+  border-block-start: 1px solid transparent;
+  -webkit-border-after: 1px solid transparent;
+  border-block-end: 1px solid transparent;
+}
+
+#knol-categoryTab .knoltab-slection .dx-tab {
+  background-color: transparent !important;
+  border-bottom:0px !important;
+}
+
+#knol-categoryTab .knoltab-slection .dx-tabs-wrapper {
+  width: 100px !important;
+  border: 1px solid transparent !important;
+  background-color: transparent !important;
+}
+
+#knol-categoryTab .knoltab-slection .dx-tab.dx-tab-selected {
+  background-color: transparent !important;
+  border-bottom:0px !important;
+}
+#knol-categoryTab .dx-tabs-wrapper:after{ border:none !important}
+
+#knol-categoryTab .knoltab-slection .dx-tab.dx-tab-selected::after {
+  border: none !important;
+}
+#knol-categoryTab .left_art{ 
+  background-color: #fff;
+  border-radius: 10px;
+  width: 30%;}
+#knol-categoryTab .right_art{ flex:1;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-left: 20px;}
+
+#knol-categoryTab .iconsearch{
+  position: absolute;
+  right: 50px;
+  top: 0;
+  border: none !important;
+}
+#knol-categoryTab .filtericonsection {
+  position: absolute;
+    right: -29px;
+    padding: 4px !important;
+    top: 1px;
+    background: #dcdcdc !important;
+    border: none !important;
+    border-radius: 2px;
+}
+
+
+#knol-categoryTab .dx-button-mode-contained.dx-state-hover {
+  background-color:transparent !important;
+}
+
+/**/
+#knol-categoryTab .dx-tabpanel-tabs .dx-tabs:not(.dx-tabs-vertical) .dx-tabpanel-tab{
+ max-width:100% I !important;
+}
+#knol-categoryTab .dx-tabpanel{
+  background-color:#fff !important;
+}
+#knol-categoryTab .dx-tabpanel-tabs .dx-tabs:not(.dx-tabs-vertical) .dx-tabpanel-tab{
+  max-width:100% !important;
+}
+#knol-categoryTab .dx-tab.dx-tab-selected .dx-tab-text-span {
+  color: #020202 !important;
+}
+.searchpanel{
+  height: 20px;
+    width: 400px;
+    padding:20px;
+    padding-right: 60px;
+    border:none;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+}
+.searchbox{
+  position:relative;
+}
+.chatbuttonpanel{
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  width: 23px;
+}
+
+.close-btn {
+  position: absolute;
+  right: 44px; /* Adjust position */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #888;
+}
+
+.knolchatContent{
+  display:flex;
+  justify-content:space-between;
+}
+
+.rounded-2xl.shadow-xl.bg-white {
+  background: #fff;
+  border: 1px solid #e2dfdf;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px -1px 10px;
+}
+.article_datagrid_container {
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh;  */
+}
+.article_datagrid {
+  flex-grow: 1; /* articleInput Allows the table to expand while keeping pager at the bottom */
+  overflow: auto;
+}
+ .dx-toolbar-after,.dx-toolbar-before,.dx-toolbar-center{
+  left:0px !important;
+  width:100% !important;
+}
+.dx-toolbar-item-content>.dx-texteditor{
+  width:100%  !important;
+}
+
+#latestartnotication .dx-toolbar-item-content>.dx-texteditor {
+  width: 98% !important;
+  margin-left: 5px !important;
+  margin-right: 5px !important;}
+#latestartnotication .dx-datagrid-search-panel {
+  margin: 0 0 0 0px;
+}
+#latestartnotication .dx-toolbar-item-content>.dx-texteditor {
+  min-width: 100%;
+}
+#latestartnotication .dx-toolbar-after{
+left:0;
+}
+/* Fix the pager at the bottom of the container */
+.article_datagrid .dx-datagrid-pager {
+  position: fixed;
+  bottom: 15px;
+  background: white;
+  z-index: 1000;
+  padding: 10px 0;
+  width: 23%;
+  margin-top: 80% !important;
+}
+.searchboxpanel{
+  width:345px !important;
+  position: relative;
+  left:27%;
+}
+
+.dx-toolbar-after{
+  position:absolute;
+  /* left:0px !important; */
+  padding-left:0px !important;
+}
+.dx-datagrid-search-panel{
+  margin:0px !important;
+  width:345px !important;
+}
+.articleInput input.dx-texteditor-input {
+  width:345px;
+}
+
+#articleLatestList .dx-datagrid-content .dx-datagrid-table .dx-row>td:first-child{
+  padding:10px !important;
+}
+.centerloading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.searchMainContent{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   height: 170px;
+   background-color: #fff;
+   width: 80%;
+   padding: 10px;
+   margin-top: 10px;
+   border-radius: 5px;
+}

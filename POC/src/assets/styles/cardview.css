@@ -1,0 +1,108 @@
+.card {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  position: relative;
+  /* margin-bottom: 15px; */
+}
+
+.card p {
+  font-size: 13px;
+  color: #000;
+  line-height: 1.6;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+.dx-mention {
+  display: inline-block;
+  background: #d7e8fe !important;
+  margin-bottom: 10px;
+  color: #0f1114;
+  font-size: 12px;
+  border: 1px solid #7e9ac9 !important;
+  padding: 2px 8px;
+  border-radius: 12px !important;
+  cursor: pointer;
+  margin: 0 3px;
+  margin-bottom: 5px;
+}
+
+.editable-tag:hover {
+  background: #dbe8ff;
+}
+
+.editable-tag span {
+  font-weight: bold;
+}
+
+.editable-tag_yellow {
+  display: inline-block;
+  background: #fdecc8;
+  color: #000;
+  font-size: 12px;
+  border: 1px solid #e7c274;
+  padding: 2px 8px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+.editable-tag_yellow:hover {
+  background: #e7c274;
+}
+
+.editable-tag_yellow span {
+  font-weight: bold;
+}
+
+.footer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  gap: 10px;
+}
+
+.selected-status {
+  display: flex;
+  align-items: center;
+}
+
+.selected-status input[type="radio"] {
+  margin-right: 5px;
+  accent-color: #3b82f6;
+}
+
+.deleteicons {
+  width: 20px;
+  vertical-align: middle;
+}
+.cannednotepopup {
+  margin-right: 250px !important;
+  transform: translate(373px, 59px) !important;
+}
+.dx-popup-title {
+  font-weight: bold !important;
+}
+.custom-title-canned {
+  font-size: 20px; /* Adjust size as needed */
+  font-weight: bold; /* Optional: Make it bold */
+  color: #333; /* Optional: Customize color */
+}
+.cannedheader p{
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+.dx-datagrid-content .dx-datagrid-table .dx-row > td, .dx-datagrid-content .dx-datagrid-table .dx-row > tr > td
+{
+  vertical-align: top !important;
+}

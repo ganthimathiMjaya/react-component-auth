@@ -1,0 +1,4 @@
+node_modules
+dist
+.vscode
+react-component-auth-1.0.0.tgz

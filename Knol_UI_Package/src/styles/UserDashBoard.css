@@ -1,0 +1,1451 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+@font-face {
+  font-family: "proxima_nova_regular";
+  src: url("../assets/fonts/proxima_nova_thin-webfont.woff2") format("woff2"),
+    url("../assets/fonts/proximanova-regular-webfont.woff") format("woff");
+  /* src: url('../Fonts/proximanova-regular-webfont.woff2') format('woff2'), url('../Fonts/proximanova-regular-webfont.woff') format('woff'); */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "proxima-nova-bold";
+  src: url("../assets/fonts/Proxima-Nova-Bold.otf");
+  /* src: url('../Fonts/proximanova-regular-webfont.woff2') format('woff2'), url('../Fonts/proximanova-regular-webfont.woff') format('woff'); */
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "proxima_nova_regular", arial !important;
+  font-weight: normal;
+  overflow-x: hidden;
+  font-weight: normal;
+  margin: 0px;
+  font-size: 14px;
+  background-color: #ededed !important;
+}
+
+.pagation {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.pagation li {
+  max-width: 40px;
+  height: 20px;
+  list-style: none;
+  background: #ccc;
+  padding: 12px;
+  line-height: 2px;
+  border-radius: 50%;
+  font-size: 13px;
+}
+
+.addroles {
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px;
+  height: 100%;
+  width: 800px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.respostorypopup {
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px;
+  height: 100%;
+  width: 400px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.plusadd {
+  background-color: #113e70;
+  color: #fff;
+  padding: 1px 9px;
+  border-radius: 5px;
+  font-size: 15px;
+  height: 27px;
+  border: none;
+}
+
+.rolesmaster {
+  display: flex;
+  height: 100%;
+}
+.firstroles {
+  flex: 1;
+  max-width: 30%;
+  border-right: 1px solid #ccc;
+}
+
+.addrolesmaster {
+  flex: 1;
+  max-width: 70%;
+}
+.roles_submaster {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.roles_submaster > h5 {
+  font-weight: bold;
+  color: #000;
+  font-size: 15px;
+}
+.addrolesmaster > h5 {
+  font-weight: bold;
+  color: #000;
+  font-size: 15px;
+}
+.addrolesheading > h5 {
+  font-weight: bold;
+  color: #000;
+  font-size: 15px;
+}
+.adminpanel {
+  padding: 10px;
+}
+.adminpanel li {
+  list-style: none;
+  border-bottom: 1px solid #ccc;
+  line-height: 28px;
+  padding-left: 10px;
+}
+.adminpanel li.active {
+  background-color: #eaeaea;
+}
+.formfield {
+  width: 90%;
+  margin-left: 10px;
+}
+.addrolesheading {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.addrolesheading > img {
+  width: 25px;
+  height: 25px;
+}
+.infoformfield {
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #ccc;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.informfieldlevel {
+  padding: 15px;
+}
+.sumerise_header {
+  font-family: "proxima-nova-bold";
+  font-size: 15px;
+  color: #000;
+}
+
+.btnsubmit {
+  border: none;
+  background-color: #113e70;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.btncancel {
+  background-color: transparent;
+  color: #000;
+  padding: 5px 10px;
+  border: 1px solid #113e70;
+  border-radius: 5px;
+}
+.permissionpanel li.active {
+  background-color: #113e70;
+  color: #fff;
+}
+.permissiontable > .table > thead > tr {
+  background: #cccccc85;
+}
+.btnnewrepo {
+  border: none;
+  background-color: #113e70;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+.Respositoryfield {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+}
+.Respositoryfield > h5 {
+  font-weight: bold;
+  color: #000;
+  font-size: 15px;
+}
+.adminstration {
+  border: none;
+  background: transparent;
+  border: 1px solid #113e70;
+  padding: 2px;
+  width: 160px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.admingroup {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+}
+.inforespotory {
+  padding: 10px;
+  background: #f4f4f4;
+  margin: 10px;
+  border-radius: 5px;
+}
+.flex_rightalignment {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.arrowpanel {
+  width: 20px;
+  position: relative;
+  bottom: 10px;
+}
+.pagation li:first-child {
+  background-color: transparent;
+}
+.pagation li:last-child {
+  background-color: transparent;
+}
+.dropdownicon {
+  width: 25px;
+  vertical-align: bottom;
+}
+
+/*optium Project*/
+.optiumproject {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 450px;
+  height: 100%;
+  flex: 450px;
+  padding: 0px;
+  background-color: #fff;
+  border-left: 1px solid #ccc;
+}
+.infoaddproject {
+  padding: 15px;
+}
+.sublistpanel {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 300px;
+  padding: 3px 12px;
+}
+.datepanel {
+  display: flex;
+  gap: 10px;
+}
+.infoaddproject > div {
+  margin-bottom: 15px;
+}
+.info_close {
+  width: 20px;
+  height: 20px;
+}
+.rightpanel {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.rightpanel > h4 {
+  font-weight: bold;
+  color: #000;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 15px;
+}
+.optumbtnproject {
+  position: absolute;
+  bottom: 0;
+}
+.optumbtnproject > .btnclear {
+  background-color: transparent;
+  border: 2px solid #000;
+  color: #000;
+  padding: 6px 20px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.optumbtnproject > .btnsave {
+  background-color: #113e70;
+  border: 2px solid #113e70;
+  color: #000;
+  padding: 6px 20px;
+  border-radius: 5px;
+}
+.optumbtnproject > .btnsavemore {
+  background-color: #113e70;
+  border: 2px solid #113e70;
+  color: #000;
+  padding: 6px 20px;
+  border-radius: 5px;
+  width: 160px;
+}
+
+/*Accordation*/
+.acc {
+  margin: 0 auto;
+}
+.acc__card {
+  margin: 2em;
+  position: relative;
+  border-radius: 10px;
+}
+.acc__card.active {
+  border: 2px solid #236df3;
+}
+.acc__title {
+  color: #212121;
+  cursor: pointer;
+  display: block;
+  padding: 0;
+  position: relative;
+  text-align: left;
+}
+.acc__title::after {
+  width: 18px;
+  height: 18px;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  position: absolute;
+  right: 30px;
+  content: " ";
+  top: 38px;
+  transform: rotate(-45deg);
+  transition: all 0.2s ease-in-out;
+  color: #000;
+}
+.acc__title.active::after {
+  transform: rotate(45deg);
+  transition: all 0.2s ease-in-out;
+}
+.acc__panel {
+  color: #212121;
+  /* display: none; */
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+.fourbtn {
+  grid-column: span 3;
+}
+.outlinebtn {
+  background: transparent !important;
+  color: #000 !important;
+  border: 1px solid #000000d9 !important;
+}
+.gridpanelcustomerdetails > .headerpanel > .acc__panel {
+  background: transparent;
+  color: #000;
+  border: 2px solid #113e70;
+}
+.nothightlight {
+  border: 1px solid #ccc;
+}
+.infoaddproject > h2 {
+  font-size: 16px;
+  margin: 0;
+}
+.optiumfeature {
+  padding: 10px;
+  color: #000;
+  font-weight: bold;
+  font-size: 13px;
+}
+.cardpanel {
+  margin: 0;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.cliamlist > ul {
+  list-style: none;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+  /* padding-top: 10px; */
+  line-height: 22px;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.cliamlist > ul > li {
+  background: #fcfcfc;
+  padding: 7px;
+  border-radius: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.cliamlist > ul > li:last-child {
+  border-bottom: none;
+}
+.infobtnclear {
+  padding: 10px;
+  border: 2px solid #113e70 !important;
+  background: transparent;
+  width: 150px;
+  color: #113e70 !important;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+}
+.btn_save {
+  padding: 10px;
+  background: #113e70;
+  width: 150px;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+}
+.hightlightProgess {
+  background-color: #eaf6ff;
+}
+button.bntaddproject.outlinebtn {
+  color: #113e70 !important;
+}
+
+/*Side Inbox*/
+.sideinbox {
+  position: relative;
+}
+.sidebox {
+  position: absolute;
+  width: 1060px;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  top: 0;
+  right: 18px;
+  bottom: 0;
+}
+.infosidepanel {
+  display: flex;
+  height: Calc(100vh - 100px);
+}
+.modulespanel {
+  flex: 200px;
+  max-width: 200px;
+  padding-left: 20px;
+  border-right: 1px solid #ccc;
+}
+.modulespanel > h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.encounterpanel {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.encounterpanel li {
+  border-bottom: 1px solid #ccc;
+  list-style: none;
+  padding: 7px;
+  font-size: 12px;
+}
+.encounterpanel li > input {
+  margin-right: 5px;
+}
+.encounterpanel li:last-child {
+  border-bottom: none;
+}
+.encounterlevel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.fieldheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.addfieldclose {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+.fieldcontrol {
+  flex: 1;
+}
+.addfieldsplit {
+  display: flex;
+}
+.mspace {
+  margin: 0;
+  padding-bottom: 10px;
+}
+.imagesize {
+  width: 20px;
+  height: 20px;
+}
+.encounterlist {
+  flex: 1;
+  background: #fcfcfc;
+  padding: 10px;
+  border-radius: 10px;
+}
+.modulemenu li {
+  list-style: none;
+  line-height: 25px;
+  padding: 5px;
+}
+.modulemenu {
+  margin-right: 10px;
+}
+.iconsmall {
+  width: 20px;
+  vertical-align: text-top;
+}
+.modulemenu li.active {
+  background: #113e70;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/*custom code*/
+.encounteraccordation {
+  margin: 2px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+.encounteraccordation .acc__title {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  font-size: 14px;
+}
+.encounteraccordation .acc__title::after {
+  width: 8px;
+  height: 8px;
+  top: 15px;
+  right: 10px;
+  color: #000;
+  font-weight: bold;
+}
+.encounteraccordation .acc__panel {
+  padding: 10px;
+}
+.padding-none {
+  padding: 0px !important;
+}
+.highlight {
+  border: 2px solid #ccc;
+}
+.encountertitle {
+  font-size: 15px;
+  font-weight: bold;
+  color: #000;
+}
+.fieldheader > h3 {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+}
+.previewbtn {
+  background-color: #113e70;
+  color: #fff;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+}
+.btn_clear {
+  background-color: transparent;
+  border: 2px solid #113e70;
+  color: #000;
+  padding: 4px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.buttonsection {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+#preview .modal-dialog {
+  width: 85%;
+}
+.menulistpanel li a {
+  padding: 3px 9px;
+  color: #000;
+}
+.tableformat > span {
+  display: block;
+}
+.tableformat > label {
+  font-weight: 500;
+  color: #000;
+}
+.menulistpanel {
+  padding: 4px;
+  background: #f3f3f3;
+}
+.imagepostion {
+  position: absolute;
+  right: 24px;
+  top: 22px;
+  cursor: pointer;
+}
+.tabpanel li.active {
+  border-bottom: 7px solid #113e70;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.tabpanel li a {
+  background-color: transparent !important;
+  color: #000 !important;
+  padding: 5px 15px;
+  font-size: 16px;
+}
+.inboxcheckpanel {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+.inboxtabs {
+  height: 600px;
+  overflow: auto;
+}
+
+.btcallsheet {
+  padding: 10px;
+  border: none;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background: transparent;
+  border-radius: 5px;
+}
+.customer_onboarding {
+  display: flex;
+  height: Calc(100vh - 155px);
+}
+.infoaddproject > div > label {
+  color: #000;
+  font-size: 14px;
+}
+.custompanel {
+  padding: 10px;
+  max-width: 500px;
+  flex: 500px;
+}
+
+@media (max-width: 600px) {
+  .sidepanel {
+    display: block;
+  }
+  .sidepanel > .leftside {
+    width: 100%;
+  }
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: auto !important;
+  }
+  .sidepanel > .leftside {
+    height: auto !important;
+    background: #fff !important;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px !important; */
+    margin-bottom: 20px;
+    width: 100% !important;
+  }
+  .toppanel {
+    padding: 10px;
+  }
+  .gridpanelcustomerdetails {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .modulespanel {
+    max-width: 100%;
+  }
+
+  .sidebox {
+    width: 95%;
+  }
+  .infosidepanel {
+    display: block;
+    height: auto;
+  }
+  .addfieldsplit {
+    display: block;
+    background-color: #fff;
+  }
+  .fieldheader {
+    border-top: 1px solid #ccc;
+  }
+  .custompanel {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .sidebox {
+    width: 95%;
+  }
+  .addfieldsplit {
+    display: block;
+  }
+  .modulespanel {
+    border-right: none;
+  }
+  .addfieldsplit {
+    border-left: 1px solid #ccc;
+  }
+
+  /*.addfieldsplit{
+      border-left:1px solid #ccc;
+  }
+  */
+}
+
+@media (max-width: 992px) {
+  .sidebox {
+    width: 96%;
+  }
+  .encounterlist {
+    height: 500px;
+    overflow: auto;
+  }
+}
+
+@media (max-width: 1600px) {
+  .fourbtn {
+    /* grid-column:1/12; */
+    margin-left: 50px;
+  }
+  .acc__card {
+    margin: 10px;
+  }
+  .encounteraccordation {
+    margin: 0px !important;
+    margin-bottom: 10px !important;
+  }
+}
+
+/*dasboard screen*/
+.flexpanelcard {
+  display: flex;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #f0f0f0;
+  /* height: 100%; */
+  /* width: 100%; */
+  /* padding-left:10px;
+  padding-right:10px; */
+  padding: 5px;
+}
+
+.subfirstchart {
+  background-color: #fff;
+  margin: 5px;
+  width: 510px;
+  /* height:335px; */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.firstchart {
+  /* background-color: #fff;  */
+
+  /* max-width:35%; */
+  float: left;
+  width: 40%;
+}
+.subfirstchart {
+  width: auto;
+  /* height: 160px; */
+  height: calc(100vh / 4);
+  padding: 15px;
+}
+
+.secondchart {
+  float: left;
+  width: 40%;
+  margin-right: 5px;
+}
+
+.thirdchart {
+  width: 20%;
+  float: left;
+  padding: 0;
+  margin-top: 5px;
+}
+.third_availbity {
+  display: flex;
+  gap: 0px;
+  height: calc(100vh / 3);
+  flex-wrap: wrap;
+
+  /* height:270px; */
+}
+.port_availbity {
+  flex: 1 1;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 40%;
+  padding: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.lastactity {
+  /* height:240px; */
+  /* overflow:auto; */
+  background-color: #fff;
+  margin-bottom: 5px;
+  /* margin: 5px; */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  /* height: calc(100vh / 4); */
+}
+
+.lastactity > ul > li {
+  list-style: none;
+}
+.lastactityflex {
+  display: block;
+  gap: 5px;
+  margin-top: 5px;
+}
+.lastactityfirst > .lastactity:last-child {
+  margin-top: 10px;
+}
+.lastactityfirst {
+  /* max-width:60%;
+  flex:60%; */
+  display: flex;
+  height: 25vh;
+  gap: 5px;
+}
+
+.lastactityfirst > .lastactity {
+  max-width: 50%;
+  flex: 50%;
+  padding: 15px;
+}
+.lastactityfirst > .lastpayer {
+  max-width: 50%;
+  flex: 50%;
+  padding: 15px;
+}
+.lastactitylast {
+  max-width: 40%;
+  flex: 40%;
+}
+.lastactity > div > h5 {
+  margin: 0;
+}
+.lastpayer > div > h5 {
+  margin: 0;
+}
+.lastpayer {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-width: 40%;
+  flex: 40%;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+.balancepanel {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.info_priority {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.priortybox {
+  width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 100px;
+  padding: 10px;
+  background-color: #fff;
+}
+.infopriortylist .badge-item {
+  margin: 5px;
+}
+
+/* .infopriortylist{
+  display:flex;
+} */
+/* .infopriortylist >h4{
+  flex: 1;
+  margin: 0;
+  padding: 5px;
+} */
+.priorityparentpanl {
+  margin-top: 40px;
+  border-radius: 10px;
+  padding: 9px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.subfirstchart > h5 {
+  margin: 0;
+}
+.port_availbity > div > h5 {
+  margin: 0;
+}
+.port_availbity > h5 {
+  margin: 0;
+}
+.balancepanel > h5 {
+  margin: 0;
+}
+.lastpayer > h5 {
+  margin: 0;
+}
+/* .denialsummary{
+  height: 43vh;
+  overflow: auto;
+} */
+.dashoboardscreen {
+  height: auto !important;
+}
+.panelbox {
+  flex: 80%;
+  padding-left: 0px !important;
+  /* max-width:80%; */
+  /* background-color:#fff; */
+}
+.sidepanel {
+  width: 100%;
+}
+
+.denialsummary {
+  /* width: 325px; */
+  padding: 5px;
+  height: 59vh;
+  border-radius: 10px;
+  text-align: left;
+}
+.denialsummary > h5 {
+  text-align: left;
+}
+.badge-box-FourBox {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+  width: 100%;
+  padding-bottom: 15px;
+  font-family: proxima-nova-bold;
+  font-size: 15px;
+  height: 12vh;
+}
+.priortycolumn {
+  height: 300px;
+}
+.badge-box-FourBox .badge-label {
+  font-size: 10px;
+  color: #000;
+}
+
+.progress-bar-wrapper {
+  width: 100%; /* Full width of the container */
+  background-color: #e0e0e0; /* Light gray background */
+  height: 8px; /* Set the height of the progress bar */
+  border-radius: 4px; /* Optional rounded corners */
+  overflow: hidden; /* Ensure progress bar stays within bounds */
+  position: relative; /* Required for child positioning */
+}
+
+.progress-bar-container {
+  height: 100%; /* Matches the height of the wrapper */
+  transition: width 0.3s ease; /* Smooth transition effect */
+  border-radius: 4px 0 0 4px; /* Rounded corners for the left side */
+  position: absolute; /* Positioned absolutely within the wrapper */
+  left: 0; /* Ensures the bar starts from the left */
+}
+
+/*
+@media only screen and (max-width:1400px)
+{
+  .flexpanelcard{
+      display:block;
+  }
+  .sidepanel>.leftside{
+      height:auto;
+  }
+  .priortycolumn{
+      display:flex;
+      width:100%;
+      gap:10px;
+  }
+  .info_priority{
+      width:30%;
+  }
+  .codepanel{
+      width:32%;
+  }
+  .secondprioirty{
+    width:63%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .firstchart{
+    max-width:97%;
+  }
+  .secondchart{
+    max-width:97%;
+  }
+  .thirdchart{
+max-width:100%;
+  }
+  .info_priority{
+    display:block;
+  }
+  .balancepanel{
+    margin-top:10px;
+  }
+  .lastactityfirst{
+    max-width:50%;
+  }
+  .lastpayer{
+    max-width:50%;
+  }
+  .badge-box-FrouBox{
+    padding:0px;
+  }
+
+}
+  */
+
+/*previous css arun*/
+/*First Chart*/
+/* #chart {
+  height: 440px;
+} */
+
+/*Second Chart*/
+.badge-container {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  /* border: 1px solid #dcdcdc;  */
+}
+
+.badge-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  border-bottom: 1px solid #dcdcdc;
+  justify-content: space-between;
+  margin: 3px;
+  padding: 4px 3px;
+}
+.payervalue {
+  font-weight: bold;
+  color: #000;
+  font-size: 13px;
+}
+
+.badge-label {
+  width: 120px;
+  display: table-cell;
+  padding: 9px;
+  padding-bottom: 0px;
+  text-transform: capitalize;
+  text-align: left;
+  color: #000;
+  font-weight: normal;
+  font-size: 12px;
+}
+.badge-item:last-child {
+  border-bottom: none;
+}
+.countpanel {
+  display: block;
+  padding: 4px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #f7f7f8;
+  color: #000;
+  border-radius: 20%;
+  font-size: 10px;
+  min-width: 15px;
+  height: auto;
+  line-height: 10px;
+  border: 1px solid #ececf1;
+  font-family: "proxima-nova-bold";
+}
+.listsection {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 5px;
+  border-bottom: 1px solid #e7e7e7;
+  font-size: 12px;
+  color: #000;
+  font-weight: bold;
+  font-family: "proxima_nova_regular";
+}
+
+.badge-count {
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #f7f7f8;
+  color: #000;
+  border-radius: 20%;
+  font-size: 12px;
+  min-width: 15px;
+  height: 10px;
+  line-height: 10px;
+}
+
+/*Third Chart*/
+.progress-bar-container {
+  display: table-cell;
+  padding: 5px;
+  width: 80%;
+}
+
+.progress-bar {
+  display: block;
+  height: 5px;
+  background-color: #113e70;
+  border-radius: 3px;
+}
+
+/* Fourth Chart */
+/* Container for the grid layout */
+.badge-container-FourBox {
+  display: grid;
+  grid-template-columns: auto auto; /* Two columns */
+  grid-template-rows: repeat(2, 1fr); /* Two rows */
+  grid-gap: 8px; /* Space between the boxes */
+  padding: 0px;
+  border-collapse: collapse;
+  height: calc(100vh / 4);
+}
+
+/* Style for each badge box */
+.badge-box-FrouBox {
+  /* background-color: #FFFFFF; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* padding: 10px; */
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  height: 100px;
+  width: 95px;
+}
+
+/* Style for the label */
+.badge-label-FrouBox {
+  font-size: 16px; /* Font size for label */
+  font-weight: bold; /* Bold text for label */
+  margin-bottom: 5px; /* Space between label and count */
+}
+
+/* Specific color styles for each label */
+.badge-label.red {
+  color: red; /* Red color for the first two items */
+}
+
+.badge-label.orange {
+  color: orange; /* Orange color for the third item */
+}
+
+.badge-label.green {
+  color: green; /* Green color for the fourth item */
+}
+
+/* Style for the count */
+.badge-count-FourBox {
+  font-size: 32px; /* Font size for count */
+  font-weight: bold;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.no-wrap-title {
+  white-space: nowrap; /* Prevent wrapping */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Display ellipsis if the text is too long */
+  margin-bottom: 20px; /* Adjust space below the title */
+  text-align: center;
+  margin: 0;
+}
+
+/*chart box*/
+/* .firstchart{
+background-color:#fff;
+border:1px solid #ccc;
+} */
+
+/* for buttons */
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Button styling */
+.custom-button {
+  padding: 5px 10px;
+  margin-right: 10px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Active button styling */
+.custom-button.active {
+  background-color: #113e70;
+  color: #fff;
+  margin-right: 10px;
+}
+
+/* Hover effect */
+.custom-button:hover {
+  background-color: #d0d0d0;
+}
+.infosummarizeworkspace {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dim background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.custom-label {
+  display: inline-block; /* Ensures proper alignment */
+  background-color: #4caf50; /* Green background for labels */
+  color: white; /* White text color */
+  width: 30px; /* Fixed width for circular shape */
+  height: 30px; /* Fixed height for circular shape */
+  line-height: 30px; /* Centers text vertically */
+  text-align: center; /* Centers text horizontally */
+  border-radius: 50%; /* Makes the shape circular */
+  font-size: 12px; /* Adjust font size */
+  font-weight: bold; /* Makes the text bold */
+}
+.lastpayer .badge-label {
+  width: 20px;
+  padding: 0px 0px;
+  margin-right: 10px;
+}
+.listsection:last-child {
+  border-bottom: none;
+}
+
+/*
+
+@media only screen and (min-width:1700px) and (max-width:1920px) {
+
+  .panelbox{
+    max-width:85%;
+  }
+  .balancepanel{
+    height:70vh;
+  }
+  .infopriortylist{
+    border: 1px solid #ccc;
+    height: 100vh;
+    border-radius: 5px;
+    width: 100%;
+
+  }
+  .lastpayer{
+    margin-bottom:10px;
+  }
+
+}
+*/
+
+.Attendance-progress-container {
+  width: 100%; /* Full-width container */
+  background-color: #e0e0e0; /* Light gray for background */
+  border-radius: 5px; /* Rounded corners */
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+/* Progress Bar Styles */
+.Attendance-progress-bar {
+  height: 100%; /* Full height */
+  transition: width 0.3s ease; /* Smooth width transition */
+}
+
+.progress_success {
+  background-color: #1fbd72;
+  height: 10px; /* Adjust height as needed */
+}
+
+.progress_warning {
+  background-color: #fdd309;
+  height: 10px; /* Adjust height as needed */
+}
+
+.progress_danger {
+  background-color: #dd2a26;
+  height: 10px; /* Adjust height as needed */
+}
+.infoattendpanel {
+  display: flex;
+  align-items: center;
+}
+.attendence_leftside {
+  flex: 50%;
+  max-width: 50%;
+  padding-left: 10px;
+}
+.attendence_rightside {
+  flex: 50%;
+  max-width: 50%;
+}
+.attendence_leftside > h3,
+.attendence_leftside > span {
+  text-align: left;
+  display: block;
+}
+.overallchart {
+  margin-left: 60px !important;
+}
+.payerlist {
+  /* height:170px; */
+  overflow: auto;
+}
+
+.dashboard-switch {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #ddd;
+}
+
+.dashboard-switch button {
+  margin: 0 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-switch button:hover {
+  background-color: #0056b3;
+}
+
+.dashboard-switch .active-button {
+  background-color: #28a745;
+  color: #fff;
+  font-weight: bold;
+}
+.dx-visibility-change-handler {
+  margin-top: 0px !important;
+}
+.no-mar {
+  margin-top: 22px !important ;
+}
+.right_section_summ {
+  display: flex;
+}
+.right_section_summ p {
+  line-height: 20px;
+  vertical-align: middle;
+  padding-top: 2px;
+  padding-right: 10px;
+}
+
+.radio-option label {
+  margin-right: 13px;
+  padding-top: 5px;
+  color: #000;
+}
+
+#pie {
+  margin-top: 0px !important;
+}

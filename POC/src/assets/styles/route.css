@@ -1,0 +1,17 @@
+.ClsMainPanel {
+  display: flex;
+}
+.menu {
+  border-right: 1px solid #ccc;
+}
+.ClsRightSide {
+  flex: 1;
+}
+.routetabcontent {
+  margin-left: 15px !important;
+}
+
+/*25-1-2025 kishore edited*/
+.menu {
+  width: auto !important;
+}

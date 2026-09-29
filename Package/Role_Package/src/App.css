@@ -1,0 +1,1488 @@
+/* Reset some default browser styling */
+body {
+  margin: 0;
+  font-family: 'ProximaNovaRegular';
+  background-color: #f5f5f5;
+}
+
+@font-face {
+  font-family: 'proxima_nova_regular';
+  src:url('./assets/fonts/proximanova-regular-webfont.woff2') format('woff2'),url('./assets/fonts/proximanova-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    font-family: 'proxima_nova_regular', arial !important;
+    font-weight: normal;
+    overflow-x: hidden;
+    font-weight:normal;
+    margin:0px;
+    font-size:14px;
+    background-color:#ededed !important;
+  
+}
+
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #e0e0e0;
+}
+
+/* Main header styling */
+.main-header {
+  background-color: #f4f4f4;
+  padding: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.logo-container {
+  padding-left: 20px;
+}
+
+.logo {
+  width: 100px; /* Adjust logo size */
+  height: auto;
+}
+
+.header-title {
+  text-align: center;
+  flex-grow: 1;
+  font-size: 20px;
+  padding-right: 40px; /* Space for the logo on the left */
+}
+
+/* Sidebar and content layout */
+.content-container {
+  display: flex;
+  height: calc(100% - 10px); /* Adjust height to accommodate the header */
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 200px;
+  padding: 20px;
+  background-color:#f4f4f4;
+  transition: width 0.3s ease; /* Smooth transition */
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 15px;
+  color: #333;
+  width:90%;
+  margin-bottom:10px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit; /* This keeps the default text color */
+  width: 100%; /* Makes the link take the full width of the sidebar-item */
+}
+
+.sidebar-item:hover {
+  background-color: #113E70;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.sidebar-icon {
+  color: #333; /* Icon color */
+  width: 20px;
+  padding-right: 10px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  width:200px;
+  margin-top:10px;
+}
+
+/* .sidebar ul li {
+  margin: 20px 0;
+} */
+
+.sidebar ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:14px;
+  padding:7px 15px;
+}
+
+.sidebar ul li a:hover {
+  color: #fff; /* Link hover effect */
+  background-color: #113E70;
+   border-radius: 5px;
+}
+
+.collapse-icon {
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.sidebar.collapsed {
+  width: 60px; /* Adjust this width as needed */
+}
+
+.sidebar.collapsed .sidebar-icon {
+  margin-right: 0;
+}
+
+.sidebar.collapsed .sidebar-list span {
+  display: none; /* Hide text when collapsed */
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Main content styling */
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Table container styling */
+.table-container {
+  flex: 5;
+  padding: 15px;
+  font-size: small;
+  background-color:#fff;
+  border-radius: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+  /* margin-right: 60px; */
+  border:1px solid #dddddd;
+  height:calc(100% - 30px);
+}
+
+.table-header h2 {
+  margin: 0;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+thead {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternating row background */
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1; /* Hover effect for rows */
+}
+
+.table-heading {
+  text-align: left;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.regular-heading {
+  text-align: left;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.medium-heading {
+  text-align: left;
+  font-size: 18px;
+  margin-top: 10px; 
+}
+
+.permission-heading{
+  text-align: left;
+  font-size: 10px;
+  /* margin-top: 10px;  */
+}
+
+/* .table-container {
+  margin: 20px;
+} */
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.table-header > .add-user-button {
+  background-color: #113e70 !important;
+  color: #fff;
+  border: none;
+  padding: 4px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.add-user-button:hover {
+  background-color: #0056b3;
+}
+
+/* Pagination styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination .page-item {
+  margin: 0 5px;
+}
+
+.pagination .page-link {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+}
+
+.pagination .page-link:hover {
+  background-color: #f0f0f0;
+}
+
+.pagination .active .page-link {
+  background-color: #153c74;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Dropdown styling */
+.table-controls {
+  margin-bottom: 15px;
+}
+
+#rowsPerPage {
+  margin-left: 5px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.panels-container {
+  display: flex; /* Align panels in a row */
+  justify-content: space-between; /* Space panels evenly */
+  gap: 20px; /* Add space between panels */
+  margin-top: 20px; /* Add spacing from the header */
+}
+
+.panel {
+  flex: 1; /* Make all panels equal in width */
+  border: 1px solid #ccc; /* Add a border for a card-like appearance */
+  border-radius: 4px; /* Round the corners */
+  padding: 20px; /* Add internal spacing */
+  background: #f9f9f9; /* Light gray background */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add hover effects */
+}
+
+.panel h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333; /* Title color */
+}
+
+.panel p {
+  font-size: 14px;
+  color: #666; /* Text color */
+}
+
+/* Hover effect for panels */
+/* .panel:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+} */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .panels-container {
+    flex-direction: column; /* Stack panels vertically */
+  }
+
+  .panel {
+    margin-bottom: 20px; /* Add spacing between stacked panels */
+  }
+}
+
+
+@font-face {
+  font-family: 'ProximaNovaBlack';
+  src: url('./assets/fonts/proximanova_black.ttf') format('truetype'),
+       url('./assets/fonts/proximanova_black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNovaThin';
+  src: url('./assets/fonts/proxima_nova_thin-webfont.woff2') format('woff2'),
+       url('./assets/fonts/proxima_nova_thin-webfont.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url('./assets/fonts/proximanova-regular-webfont.woff2') format('woff2'),
+       url('./assets/fonts/proximanova-regular-webfont.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Styles for the Roles Page */
+
+/* Add button for adding permissions */
+.add-permission-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.add-permission-btn:hover {
+  background-color: #0056b3;
+}
+
+.roles-page {
+  display: flex;
+  height: 110vh;
+  width: 160vh;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.roles-sidebar {
+  width: 25%;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.roles-search {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 160%;
+}
+
+.roles-search input {
+  width: 60%;
+  padding: 6px;
+}
+
+.add-role-btn {
+  padding: 6px 12px;
+  width: 75px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-left: 170px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.roles-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.role-item {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;  /* Line between roles */
+  font-size: small;
+  color: #333;
+  cursor: pointer;
+}
+
+.role-item:last-child {
+  border-bottom: none;  /* Remove bottom border for the last item */
+}
+
+.selected-role {
+  background-color: #e0e0e0;  /* Highlighted background for the Admin role */
+  border-radius: 4px;
+}
+
+.roles-list li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: white;
+  /* border: 1px solid #ccc; */
+  cursor: pointer;
+}
+
+.role-details {
+  width: 80%;
+  padding: 20px;
+}
+
+.role-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.role-form label {
+  margin-bottom: 10px;
+}
+
+.role-form input {
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.permissions-input {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-top: 10px; */
+}
+
+.permission-tag {
+  background-color: #e0e0e0;
+  padding: 6px 10px;
+  border-radius: 4px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.permission-tag button {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.form-actions {
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.cancel-btn,
+.submit-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: #002855;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.cancel-btn {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #555;
+}
+
+.repository {
+  background-color: white;
+  padding: 20px; /* You can adjust the padding as needed */
+  min-height: 100vh;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Aligns heading and button */
+  align-items: center; /* Vertically centers the content */
+}
+
+/* Repository page styling */
+.repository-container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.repository-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+.add-repo-button {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.repository-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.repository-section {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  background-color: white;
+  border: 1px solid #007bff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+.sub-section {
+  margin-left: 20px;
+}
+
+.sub-section-title {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.dropdown-container {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px dashed black;
+  margin-bottom: 0; /* To make the containers connected */
+  position: relative; /* To allow the dropdown arrow positioning */
+}
+
+.dropdown-header {
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-header::after {
+  content: 'â–¼';
+  font-size: 12px;
+  color: #555;
+}
+
+.dropdown-content {
+  padding-left: 15px;
+  margin-top: 10px;
+}
+
+.dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.action-button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  height: 30px;
+  padding: 5px 10px;
+  margin-left: 200px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 11px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.action-button:hover {
+  background-color: #ddd;
+}
+
+.dropdown-container::after {
+  content: '';
+  display: block;
+  width: 100%;
+  /* border-bottom: 1px dotted #000; */
+  margin: 10px 0;
+}
+
+.repository-page {
+  display: flex;
+  height: 110vh;
+  width: 160vh;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.close-button {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.repository-tree {
+  margin-top: 20px;
+}
+
+.tree-item-with-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.repository-button {
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.repository-container {
+  width: 400px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.app-bar {
+  background-color: white;
+  color: black;
+}
+
+.title {
+  flex-grow: 1;
+}
+
+.heading-line {
+  border: none; /* Remove default border */
+  height: 1px; /* Line height */
+  background-color: #ccc; /* Line color */
+  margin: 10px 0; /* Add some vertical space */
+}
+
+.add-repo-button {
+  background-color: #153c74; /* Button color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add some padding */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.add-repo-button:hover {
+  background-color: #0056b3; /* Darker button color on hover */
+}
+
+.card-container {
+  padding: 10px;
+}
+
+.card {
+  margin-bottom: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.card-title {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-button {
+  justify-content: start;
+  padding: 5px 15px;
+}
+
+/* Treeview Styles */
+.treeview-container {
+  background-color: #f0f0f0;
+  padding: 15px;
+  margin: 20px 0;
+  position: relative;
+  border-radius: 5px;
+}
+
+.treeview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.treeview-left {
+  display: flex;
+  align-items: center; /* Keep arrow and heading aligned */
+  cursor: pointer;
+}
+
+.treeview-header .dropdown-arrow {
+  font-size: 16px;
+  color: #333;
+  margin-right: 10px; /* Space between the arrow and the heading */
+}
+
+.section-button {
+  background-color: white;
+  border: 2px solid #153c74; /* Blue border */
+  color: black; /* Blue text */
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 150px; /* Fixed width for uniform size */
+  text-align: center; /* Center text within the button */
+}
+
+.section-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-label {
+  margin: 10px 0 5px; /* Space above and below the label */
+  font-weight: bold; /* Make the label bold */
+  color: #153c74; /* Match the color theme */
+  text-align: left; /* Align text to the left */
+  width: 80%; /* Match the input width */
+}
+
+/* .modal-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+} */
+
+.modal-content {
+  flex-direction: column;
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  width: 80%;
+  height: 80%;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  position: relative;
+  align-items: left;
+}
+
+/* .modal-content {
+  max-width: 5000px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+} */
+
+.modal-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-submit-button {
+  background-color: #153c74; /* Dark blue color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Add Repo Form */
+.add-repo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-repo-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.add-repo-form input[type="text"],
+.add-repo-form select,
+.add-repo-form textarea {
+  width: 70%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.add-repo-form input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.add-repo-form button[type="submit"] {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.treeview-content {
+  padding-top: 10px;
+  padding-left: 20px;
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.subheadings-container {
+  padding-top: 10px; /* Space above the subheadings */
+  padding-left: 20px; /* Indentation for subheadings */
+}
+
+.subheading {
+  display: flex;
+  justify-content: space-between; /* Space between the text and button */
+  align-items: center; /* Center items vertically */
+  margin: 5px 0; /* Margin between subheadings */
+}
+
+.subheading .section-button {
+  width: 150px; /* Fixed width for subheading buttons */
+}
+
+/* permission page */
+.permission-page {
+  display: flex;
+  height: 110vh;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.permission-sidebar {
+  width: 20%;
+  padding-right: 20px;
+}
+
+.permission-sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.permission-sidebar-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.permission-add-button {
+  background-color: #153c74;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.permission-sidebar-search {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.permission-sidebar-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.permission-sidebar-list li {
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.sidebar-item-separator {
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.permission-content {
+  width: 80%;
+}
+
+.permission-header h1 {
+  margin-bottom: 20px;
+}
+
+/* Separation line between the sidebar and main content */
+.sidebar-content-separator {
+  width: 1px;
+  background-color: #ddd;
+  margin-right: 20px;
+  height: 100vh;
+}
+
+.permission-table-container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.permission-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.permission-table th,
+.permission-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.permission-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.permission-table input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.expand-button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.child-row td {
+  padding-left: 30px;
+}
+
+.child-item input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+
+/*roles page styles*/
+/* roles page styles */
+.rolespage-page {
+  display: flex;
+  height: 110vh;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  font-family: 'ProximaNovaRegular';
+  border-radius: 10px;
+  margin-right: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.rolespage-sidebar {
+  width: 20%;
+  padding-right: 20px;
+  font-family: 'ProximaNovaRegular';
+}
+
+.rolespage-sidebar-header {
+  display: flex;
+  justify-content: space-between; /* Align heading and add button */
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.rolespage-sidebar-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.rolespage-add-button {
+  background-color: #153c74;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.rolespage-add-button:hover {
+  background-color: #2565be; /* Darker green on hover */
+}
+
+.rolespage-sidebar-search {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.rolespage-sidebar-list {
+  list-style-type: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.rolespage-sidebar-list li {
+  padding: 8px 0;
+}
+
+.rolespage-sidebar-item-separator {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin: 8px 0;
+}
+
+
+.rolespage-sidebar + .rolespage-main-content {
+  border-left: 1px solid #ccc;
+  padding-left: 20px;
+}
+
+.rolespage-main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Main Form Styling */
+.roles-form-container {
+  display: flex;
+  flex-direction: column;
+  font-family: 'ProximaNovaRegular';
+  width: 100%;
+  gap: 20px;
+  overflow-y: auto; 
+}
+
+.input-role, .input-permission {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-family: 'ProximaNovaRegular';
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.permission-list {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #ccc;
+  font-family: 'ProximaNovaRegular';
+  padding: 8px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.permission-tag {
+  display: flex;
+  align-items: center;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.remove-permission {
+  margin-left: 8px;
+  cursor: pointer;
+  color: #888;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cancel-button, .submit-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.submit-button:hover {
+  background-color: #002244; /* Slightly darker blue on hover */
+}
+
+.submit-button {
+  display: block;
+  margin: 20px auto;
+  padding: 8px 16px;
+  background-color: #003366; /* Dark blue */
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.modal-submit-btn{
+    background-color: #002855;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #333;
+}
+
+/* Login Page Styles */
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Light grey background */
+  font-family: 'ProximaNovaRegular';
+}
+
+.login-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  justify-content: center; /* Centers the text */
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+ align-items: left;
+}
+
+.login-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+  text-align: left;
+}
+
+.login-input {
+  /* width: 100%; */
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.85em;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.login-button {
+  background-color: #153c74;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.login-button:hover {
+  background-color: #0d2a57;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.remember-checkbox {
+  margin-right: 5px;
+}
+
+.forgot-password {
+  color: #1a73e8;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.css-yseucu-MuiDataGrid-columnHeaderRow{
+  background-color:#dce3f1 !important;
+}
+.css-w6kqc4{ box-shadow: none !important;}
+.css-rgwoji{box-shadow: none !important;}
+.css-jr163w-MuiPaper-root{box-shadow:none !important;    height: 84vh;}
+.css-5pj2bt{box-shadow:none !important}
+.css-h65jw3{box-shadow: none !important;}
+.css-1vigakz-MuiDataGrid-virtualScroller{ height: 70vh !important;}
+button{ box-shadow: none !important;}
+.sidebar-item a:hover{ color: #fff !important; }
+.sidebar-list li:hover{ color: #fff !important; }
+.sidebar-item:hover{ color: #fff !important; }
+.add-user-button{background-color: #113E70 !important; color: #fff !important;}
+.css-1o8c9x7-MuiSimpleTreeView-root {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: 0;
+  position: relative;
+  height: 561px;
+  overflow-x: hidden;
+}
+.css-imrjgg-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-imrjgg-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate{color: #113E70 !important;}
+.css-jr163w-MuiPaper-root{ padding: 12px;}
+
+@font-face {
+  font-family: 'proxima_nova_regular';
+  src:url('../src/assets/fonts/proxima_nova_thin-webfont.woff2') format('woff2'),url('../src/assets/fonts/proximanova-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+body {
+    font-family: 'proxima_nova_regular', arial !important;
+    font-weight: normal;
+    overflow-x: hidden;
+  font-weight:normal;
+    margin:0px;
+    font-size:14px;
+    background-color:#ededed !important;
+ 
+}
+.css-5pj2bt{border: 1px solid #dddddd;}
+.css-h65jw3{border: 1px solid #dddddd;}
+.css-w6kqc4{border: 1px solid #dddddd;}
+.css-rgwoji{border: 1px solid #dddddd;}
+.css-jr163w-MuiPaper-root{border: 1px solid #dddddd; border-radius: 10px !important;}
+
+/*custom code*/
+.dx-list .dx-empty-message, .dx-list-item-content{
+  padding:2px !important;
+  padding-left:10px !important;
+}
+.dx-list-item{
+  border:none !important;
+}
+
+
+.addnewRespostory{
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  width: 450px !important;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.routeurlbox,.setparentcontrol{
+  margin-bottom:10px;
+}
+.Respositoryformfield{
+  background: #f0f0f0;
+  padding: 18px;
+}
+.respositry_header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 2px 10px;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.respositry_footer{
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  background-color:#fff;
+  padding:5px 10px;
+  font-size: 14px;
+  padding: 8px 18px;
+  margin: 0;
+}
+.dx-button-mode-contained.dx-button-default{
+  background-color:#113e70 !important;
+}
+
+
+
+
+
+/*.css-1gitj9u-MuiTypography-root{font-family: 'proxima_nova_regular', arial !important; font-weight: bold !important;}
+.css-1kk8xoz-MuiTreeItem-content .MuiTreeItem-label{font-family: 'proxima_nova_regular', arial !important;}*/

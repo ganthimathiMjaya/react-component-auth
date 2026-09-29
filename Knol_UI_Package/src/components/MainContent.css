@@ -1,0 +1,77 @@
+#Knol-MainContent .dx-tab.dx-tab-selected {
+    background-color: rgb(18, 21, 89);
+    color: rgb(255, 255, 255);
+}
+#Knol-MainContent .category-tab > .dx-tabs-wrapper > .dx-tab.dx-tab-selected{
+    background-color:red !important;
+}
+#Knol-MainContent .dx-tabs .dx-tab-text-span, .dx-tabs .dx-tab-text-span-pseudo{
+    color:#000;
+}
+#Knol-MainContent .dx-tab.dx-tab-selected .dx-tab-text-span{
+    color: #020202 !important;
+}
+#Knol-MainContent .IconSearch{
+    border: 0px !important;
+} 
+
+#Knol-MainContent .dx-popup-wrapper {
+    /* border: 1px solid #ddd; */
+    background: #fff;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    border-radius: 6px;
+    width: 200px;
+    height: auto;
+    left: 0px;
+    top: 0px;
+     transform: translate(0px, 662px);
+    transition: none 0s ease 0s;
+    z-index: 1501;
+   opacity: 1; 
+}
+   
+#Knol-MainContent .sortingsubpanel{
+    position: relative;
+}
+#Knol-MainContent .sortingpopup{
+    border: 1px solid #ccc;
+    box-shadow:2px 2px 18px 0px #ccc;
+    background: #fff;
+    width: 200px;
+    border-radius: 5px;
+    height:85px;
+    position:absolute;
+    right:10px;
+}
+.chatinfocontent {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 18px 0px #ccc;
+    background: #fff;
+    width: 250px;
+    border-radius: 5px;
+    height: 300px; /* You can adjust this based on your desired height */
+    max-height: 200px; /* Set a max-height, adjust as needed */
+    position: absolute;
+    right: -150px;
+    overflow-y: auto;
+    z-index: 999999;
+    font-size: 11px;
+    top: -200px;
+  }
+ 
+  .dx-tabpanel-tabs-position-top .dx-tabpanel-tab.dx-state-active::after{
+    border:none !important;
+    border-bottom:none !important;
+  }
+  #Knol-MainContent .dx-tab.dx-tab-selected{
+    background-color:rgb(213 214 224) !important;}
+
+  .dx-tab:hover{
+        background-color:transparent !important;
+    }
+   .dx-tab.dx-state-hover::after{
+        border:none !important;
+    }
+    #Knol-MainContent .dx-item.dx-tab .dx-tabpanel-tab.dx-state-hover{
+        border:1px solid #113e70 !important;
+    }

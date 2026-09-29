@@ -1,0 +1,12 @@
+{
+    "ganthi": {
+        "read": ["component1", "component2"]
+    },
+    "kathir": {
+        "read": ["component2"]
+    },
+    "admin": {
+        "read": ["component1", "component2"],
+        "write": ["component1", "component2"]
+    }
+  }

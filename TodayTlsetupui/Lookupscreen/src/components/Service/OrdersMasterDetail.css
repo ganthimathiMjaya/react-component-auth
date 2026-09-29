@@ -1,0 +1,384 @@
+.lookupscreen-container {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    height: 90vh;
+}
+
+
+/* LEFT PANEL */
+.lookupscreen-left {
+    max-width: 200px;
+    flex: 9%;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.lookupscreenpanel-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.lookupscreen-item {
+    padding: 7px;
+    border-radius: 10px;
+    /* margin-bottom: 8px; */
+    cursor: pointer;
+    background: #f9fafb;
+    transition: all 0.2s ease;
+}
+
+.lookupscreen-item:hover {
+    background: #fff;
+}
+
+/* RIGHT PANEL CARD */
+.lookupscreenexcel-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    height: 100%;
+}
+
+/* HEADER */
+.lookupscreenexcel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lookupscreenexcel-header h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c2c2c;
+}
+
+
+/* Improve DataGrid appearance */
+.arcflow-lookupscreen .dx-datagrid {
+    border-radius: 8px;
+}
+
+
+
+/* Header look like Excel */
+.arcflow-lookupscreen .dx-datagrid-headers {
+    background-color: #f5f7fa;
+    font-weight: 600;
+}
+
+/* Row hover */
+.arcflow-lookupscreen .dx-row:hover {
+    background-color: #f0f6ff;
+}
+
+/* Focused cell (Excel-like) */
+.arcflow-lookupscreen .dx-datagrid-focus-overlay {
+    border-color: #4a90e2;
+}
+
+.lookupscreen-item.active {
+    background: #e0ecff;
+    border-left: 4px solid #3b82f6;
+}
+
+.lookupscreen-id {
+    font-weight: 600;
+    color: #2563eb;
+}
+
+.arcflow-lookupscreen .dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item.dx-state-focused.dx-list-item-selected {
+    /* background-color: rgba(0, 0, 0, .1); */
+    background-color: white !important;
+
+    color: #333;
+}
+
+.arcflow-lookupscreen .dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item.dx-list-item-selected {
+    /* background-color: rgba(0, 0, 0, .1); */
+    color: #333;
+}
+
+.arcflow-lookupscreen .dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item.dx-list-item-selected {
+    background-color: white !important;
+    color: #333;
+}
+
+.arcflow-lookupscreen .dx-datagrid .dx-header-row>td .dx-datagrid-text-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.arcflow-lookupscreen .dx-datagrid .dx-header-filter {
+    order: 2;
+    margin-left: 6px;
+}
+
+.arcflow-lookupscreen .dx-datagrid .dx-column-indicators {
+    order: 1;
+    margin-right: auto;
+}
+
+/* RIGHT PANEL */
+.lookupscreen-right {
+    flex: 81%;
+    max-width: 81%;
+    background: #ffffff;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.arcflow-lookupscreen .dx-toolbar-label .dx-toolbar-item-content>div {
+    width: auto !important;
+}
+
+/* .arcflow-lookupscreen .dx-datagrid-header-panel .dx-toolbar-after {
+    display: none !important;
+} */
+
+/* .arcflow-lookupscreen-popup .dx-datagrid-header-panel .dx-toolbar-after {
+    display: none !important;
+} */
+
+
+/* Make popup stick to right side */
+.lookupscreenright-side-popup .dx-overlay-content {
+    padding: 0;
+    border-radius: 0;
+}
+
+/* Popup body full height */
+.lookupscreenpopup-content {
+    height: calc(100vh - 48px);
+    /* adjust for title bar */
+    overflow-y: auto;
+    padding: 16px;
+    background: #fff;
+}
+
+/* Form styling */
+.lookupscreenpopup-content .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.lookupscreenpopup-content label {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.lookupscreenpopup-content>.form-group>input {
+    height: 36px !important;
+    padding: 6px 8px !important;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+
+/* Make DataGrid search panel full width */
+.arcflow-lookupscreen .dx-datagrid-search-panel {
+    width: 100% !important;
+}
+
+.arcflow-lookupscreen .dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item.dx-list-item-selected {
+    background-color: transparent !important;
+
+}
+
+/* Stretch input inside search panel */
+.arcflow-lookupscreen .dx-datagrid-search-panel .dx-texteditor {
+    width: 100% !important;
+}
+
+.arcflow-lookupscreen .grid-search-wrapper {
+    position: relative;
+}
+
+/*orderMaster*/
+.lookupscreensearch {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+.lookupscreensearchbox {
+    Box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 30px;
+    MARGIN: 10PX 0;
+    border-radius: 5px;
+}
+
+.lookupscreenlevellist>label {
+    display: block;
+}
+
+.lookupscreenlevellist.first {
+    max-width: 70%;
+    flex: 1;
+}
+
+.lookupscreenlevellist.second {
+    max-width: 15%;
+    flex: 1;
+}
+
+.lookupscreenlevellist.third {
+    max-width: 15%;
+    flex: 1;
+}
+
+.lookupscreenbutton {
+    border: none;
+    background: #113e70;
+    padding: 6px 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.lookupscreensearch input select {
+    width: 100%;
+    padding: 5px;
+    height: 25px;
+}
+
+/* Container */
+.lookupscreensearchbox {
+    background: #ffffff;
+    padding: 16px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 16px;
+}
+
+/* Main row */
+.lookupscreensearch {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Each field */
+.lookupscreenlevellist {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Width control */
+.lookupscreenlevellist.first {
+    flex: 2;
+    min-width: 260px;
+}
+
+.lookupscreenlevellist.second,
+.lookupscreenlevellist.third {
+    flex: 1;
+    min-width: 160px;
+}
+
+.lookupscreenlevellist.action {
+    min-width: 120px;
+}
+
+/* Labels */
+.lookupscreenlevellist label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #555;
+}
+
+/* Inputs */
+.lookupscreen-searchcontrol {
+    height: 38px;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    outline: none;
+}
+
+.lookupscreen-searchcontrol:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.15);
+}
+
+/* Search button */
+.lookupscreenbutton {
+    height: 38px;
+    padding: 0 20px;
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.lookupscreenbutton:hover {
+    background: #125aa3;
+}
+
+.lookupscreen-right {
+    position: relative;
+    height: 100%;
+}
+
+.lookupscreen-center-wrapper {
+    display: flex;
+    align-items: center;
+    /* vertical center */
+    justify-content: center;
+    /* horizontal center */
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.lookupscreen-empty-state {
+    max-width: 420px;
+    padding: 24px;
+    color: #555;
+    margin: auto;
+    padding-top: 25%;
+}
+
+.lookupscreen-empty-state h3 {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.lookupscreen-empty-state p {
+    color: #777;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .lookupscreensearch {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .lookupscreenlevellist {
+        width: 100%;
+    }
+}

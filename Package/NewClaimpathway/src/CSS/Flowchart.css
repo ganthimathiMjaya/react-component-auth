@@ -1,0 +1,142 @@
+.css-1rontn5-MuiTypography-root{
+  font-size:11px !important;
+  text-align:center;
+}
+.css-qxmlqj-MuiButtonBase-root-MuiButton-root{
+  font-size:11px !important;
+}
+.css-ygkm2j-MuiTypography-root{
+  font-size:11px !important;
+  font-weight:500 !important;
+}
+.css-qxmlqj-MuiButtonBase-root-MuiButton-root{
+  text-align:left;
+}
+.css-qxmlqj-MuiButtonBase-root-MuiButton-root:hover{
+  background-color:transparent !important;
+}
+.css-14hfa1y{
+padding:0px !important;
+margin:0px !important;
+}
+.css-14hfa1y:hover{
+background-color:#b7deff;
+border-radius:4px;
+}
+
+/*scrollbar*/
+::-webkit-scrollbar {
+  width:5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.css-15dw1ly{
+  padding:0 !important;
+  margin-top:4px !important;
+
+}
+.css-1rontn5-MuiTypography-root{
+  margin-bottom:15px !important;
+}
+
+.css-1ya9rpk
+{
+  padding:0px !important;
+  border-radius:0px !important;
+}
+.systemchatbubble{
+  background-color:#fff;
+border-radius:4px;
+}
+.css-19wr3xp{
+  padding:6px !important;
+  border-radius:4px !important;
+}
+.css-shs5gd{
+  padding:0 !important;
+}
+.css-lprd17{
+  position:relative;
+  font-weight:bold;
+}
+.css-1jahn4k{
+  border-radius:4px !important;
+}
+.css-lprd17::before{
+  content:'';
+  border-right: 3px solid #113e70;
+  
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: -30px;
+
+}
+
+/* app.css */
+.arrow-left {
+  position: absolute;
+  top: 10px;
+  right: -12px;
+  width: 21px;
+  height: auto;
+}
+
+.arrow-right {
+  position: absolute;
+  top: 6px;
+  left: -10px;
+  width: 17px;
+  height: auto;
+}
+
+
+/* Wrapper for chat reply bubble and response */
+.chatreply-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+/* Chat reply bubble (white bubble) */
+.chatreply {
+  position: relative;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  font-size: 11px;
+  margin-bottom: 4px; /* Space between bubble and response */
+}
+
+/* Triangle before the white bubble */
+.chatreply::before {
+  content: '';
+  border-right: 3px solid #113e70;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: -30px;
+}
+
+/* Response outside the white bubble (grey area) */
+.chatreply-response {
+  font-size: 11px;
+  color: #333;
+  /* background-color: red; Grey area */
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-left: 12px; /* Align under bubble */
+}

@@ -1,0 +1,37 @@
+{
+  "name": "react-component-auth",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "This is an npm for component authorization",
+  "main": "dist/index.js",
+  "scripts": {
+    "build:dev": "rollup -c --environment NODE_ENV:development",
+    "build": "rollup -c --environment NODE_ENV:production"
+  },
+  "keywords": [
+    "react",
+    "react-custom-hooks",
+    "hooks",
+    "custom",
+    "hooks",
+    "npm"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/casbin-js/examples.git"
+  },
+  "bugs": {
+    "url": "https://github.com/casbin-js/examples.git/issues"
+  },
+  "author": "ganthimathi",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-component-auth": "file: react-component-auth-1.0.0.tgz"
+  },
+  "devDependencies": {
+    "rollup": "^4.18.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}

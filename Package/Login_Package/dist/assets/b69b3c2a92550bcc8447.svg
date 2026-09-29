@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #8071b4;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 16px;
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        fill: #fcfdfd;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.6.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 709)  -->
+  <g>
+    <g id="Layer_1">
+      <rect class="cls-1" x="-14.7" y="-10.3" width="138.3" height="129"/>
+      <g>
+        <path class="cls-3" d="M60.5,12.3v-1h31.4v-2h-37.1c-1.1,0-1.9.8-1.9,1.7v5.7c0,.9.9,1.7,1.9,1.7h37.1v-6.2h-31.4Z"/>
+        <path class="cls-3" d="M60.4,36.3v-1h30.2v-6h-37.1c-1.1,0-1.9.8-1.9,1.7v5.7c0,.9.9,1.7,1.9,1.7h37.1v-2.2h-30.2Z"/>
+        <path class="cls-3" d="M54.2,42.5v-1h32.5v-2.3h-37.1c-1.1,0-1.9.8-1.9,1.7v5.7c0,.9.9,1.7,1.9,1.7h37.1v-5.9h-32.5Z"/>
+        <path class="cls-3" d="M51.9,24.3v-1h30.5v-3.9h-37.1c-1.1,0-1.9.8-1.9,1.7v5.7c0,.9.9,1.7,1.9,1.7h37.1v-4.2h-30.5Z"/>
+      </g>
+      <text class="cls-2" transform="translate(10.1 88.3)"><tspan x="0" y="0">.learn</tspan></text>
+      <rect class="cls-1" x="-15.7" y="-13.8" width="139.2" height="129.2"/>
+    </g>
+  </g>
+</svg>

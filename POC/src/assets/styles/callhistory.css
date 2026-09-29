@@ -1,0 +1,33 @@
+.call_history_left_box {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 13px;
+}
+.call_history_left_box label {
+  font-weight: normal;
+  font-size: 12px;
+  margin-top: 14px;
+}
+
+.call_history_left_box .dx-dropdowneditor-icon {
+  border: 1px solid #d3d3d3;
+}
+
+.call_history_left_box .filter_button .dx-button-content {
+  background-color: #113e70;
+  color: #fff;
+  padding: 11px;
+}
+
+.call_history_left_box .filter_button {
+  margin-top: 10px;
+}
+
+.call_history_left_box .dx-button-text {
+  padding: 0px 10px;
+}
+
+.fillter_button .dx-button-text {
+  padding: 9px 14px;
+}

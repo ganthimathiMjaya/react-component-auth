@@ -1,0 +1,12 @@
+.my-custom-spinner .dx-loadindicator-icon {
+    background-image: url('../image/loader.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 99999;
+  }
+  
+  .my-custom-spinner .dx-loadindicator-segment,
+  .my-custom-spinner .dx-loadindicator-image {
+    display: none; /* hide default spinner */
+  }

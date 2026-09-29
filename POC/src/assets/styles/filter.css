@@ -1,0 +1,47 @@
+.ellipsistext{
+  width: 180px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.limitext {
+  width: 135px;  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  line-height: 11px;
+  text-transform:capitalize;
+ }
+ .notification {
+  width: 40px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 5px;
+}
+.groupactive{
+background-color:#113e70 !important;
+color: #fff !important;
+border: none !important;
+padding:5px 10px !important;
+border-radius:15px !important;
+position: relative !important;
+font-size:13px !important;
+width:auto !important;
+height: 26px;
+padding-right: 18px !important;
+}
+.parentclass{
+  position: relative;
+}
+.dx-list-item, .dx-list-item:not(last-of-type) {  
+  border: none;  
+}
+
+.dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item.dx-state-focused.dx-list-item-selected {
+  background-color: #113e70 !important;
+  color: #fff;
+}
+.dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item.dx-state-focused{
+  background-color: #113e70 !important;
+  color: #fff;
+}

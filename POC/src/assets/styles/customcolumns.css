@@ -1,0 +1,12 @@
+.hide-header-grid .dx-datagrid-headers {
+  display: none !important;
+}
+.dx-splitter {
+  border-radius: 10px;
+}
+.btapply {
+  padding: 10px !important;
+}
+.btnclear {
+  padding: 10px !important;
+}

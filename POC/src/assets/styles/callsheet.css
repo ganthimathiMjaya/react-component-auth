@@ -1,0 +1,117 @@
+.encouterpananel {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 10px;
+
+  background: #fff;
+
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  border-radius: 1px;
+  border-bottom: 1px solid #ccc;
+}
+.encouterpananel > div > span {
+  display: block;
+}
+.listbox > label {
+  font-size: 12px;
+}
+.listbox > span {
+  font-size: 12px;
+}
+
+.panelbox > input {
+  margin-bottom: 5px;
+}
+
+.horizontalevel {
+  display: flex;
+  gap: 10px;
+}
+.infogroup {
+  display: flex;
+}
+.infogroup > label {
+  flex: 1;
+  font-size: 12px;
+  font-family: "proxima_nova_rgregular";
+}
+.infogroup > img {
+  width: 16px;
+  height: 16px;
+}
+.btnsubmit {
+  background-color: #113e70 !important;
+  color: #fff;
+  border: none;
+  padding: 3px 18px;
+  border-radius: 5px;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 500;
+}
+.savefile {
+  position: relative;
+}
+
+.notification {
+  width: 40px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 5px;
+}
+.leftsidebar {
+  width: 250px;
+}
+.userimage {
+  width: 150px;
+}
+.info_currentspace {
+  flex: 240px;
+  font-weight: 500;
+}
+.athenabiling {
+  width: 240px;
+}
+.info_notify {
+  position: relative;
+}
+.tab-container {
+  display: flex;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.tab-button {
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 120px;
+  text-align: left;
+}
+
+.tab-button.active {
+  background: #d0d0d0;
+  font-weight: bold;
+  border-color: #999;
+}
+.summarybtns {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+.summarybtns > button {
+  margin-right: 7px;
+}
+.tab-container {
+  display: block !important;
+}

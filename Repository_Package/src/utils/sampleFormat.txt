@@ -1,0 +1,36 @@
+import { usePermissions,handleComponents } from "IAM";
+
+const SampleComponent = 
+const { componentsItems, validObjects } = usePermissions();
+
+const iamComponents = {
+    id: 1,
+    value: "Create Team",
+    actions: ["create"],
+  }
+
+const hasPermission = handleComponents(iamComponents, validObjects);
+
+return (
+    { hasPermission && <Button
+                         key={iamComponents.id} 
+                        variant="contained"
+                        id="creategroup"
+                        onClick={createGroup}
+                        sx={{
+                          textTransform: "none",
+                          backgroundColor: "#ff6e09",
+                          color: "#fff",
+                          borderRadius: "20px",
+                          "&:hover": {
+                            backgroundColor: "#ff6e09",
+                            color: "#fff",
+                          },
+                        }}
+                      >
+                        <AddCircleOutlineIcon />
+                        Create Team
+                      </Button>
+
+                }
+)

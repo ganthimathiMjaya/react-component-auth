@@ -1,0 +1,73 @@
+.dx-datagrid-table {
+    border: 1px solid #ddd;
+    width: 100%; /* Ensure the table width is 100% */
+    max-width: 100%; /* Prevent exceeding container width */
+    margin-bottom: 20px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    font-size: 12px;
+    font-family: 'proxima_nova_rgregular';
+}
+
+.dx-header-row td {
+    font-weight: bold !important; 
+}
+.dx-checkbox-icon{
+    margin: 4px 0 0;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'proxima_nova_rgregular';
+    line-height: normal;
+    box-sizing: border-box;
+}
+.chk{
+    text-align: left;
+}
+.dx-datagrid .dx-selection {
+    background-color: #edf4fb !important;
+    border-left: 3px solid #113e70;
+    
+}
+.dx-datagrid-rowsview .dx-selection.dx-row > td,
+.dx-datagrid-rowsview .dx-selection.dx-row:hover > td {
+    background-color: #edf4fb !important;
+}
+
+/* .grid-out{ 
+    width: 100%; */
+     /* width: calc(80vw - 80px);  */
+     /* height:100%; */
+    /* overflow-x: scroll; */
+ /* } */
+ /* .dx-datagrid-rowsview .dx-row {
+    height: 10px; 
+    line-height: 10px; 
+}
+
+@media only screen and (min-width:1700px) and (max-width: 1920px) { 
+   
+    .grid-out {
+    width: calc(80vw - -22px);
+    height:100%;
+}
+ } */
+ .parent-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    width: 100%; /* Ensure the parent takes full width */
+}
+
+.grid-container {
+    flex: 1; /* Allow this container to grow and shrink */
+    /* max-width: 1500px;  */
+max-width: 100%;
+    /* overflow: hidden;  */
+    width: 600px;
+}
+.dx-datagrid-search-panel{
+    margin-right: 50px !important;
+}
+/* .dx-popup-wrapper>.dx-overlay-content{
+    transform: translate(0px, 0px) scale(1) !important;
+} */

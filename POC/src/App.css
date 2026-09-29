@@ -1,0 +1,53 @@
+
+@font-face {
+  font-family: 'proxima_nova_regular';
+  src: url('./assets/fonts/proximanova-regular-webfont.woff2') format('woff2'), url('./assets/fonts/proximanova-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'proxima_nova_regular', arial !important;
+  font-weight: normal;
+  overflow-x: hidden;
+  overflow:auto;
+  font-weight:normal;
+  margin:0px;
+  font-size:14px;
+  background-color:#ededed !important;  
+
+}
+.rounded-lg{
+  border-radius:0px;
+  border:1px solid #f7f7f7;
+  flex:1;
+}
+.btnsubmit {
+  background-color: #113e70;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+.bluebutton{
+  background-color :#4784e6 !important;
+  color: #fff  !important;
+  border: none;
+  padding: 7px 13px  !important;
+  border-radius: 5px  !important;
+  font-size: 13px  !important;
+  line-height: 15px  !important;
+  margin: 5px !important;
+}
+
+.sidebar-error-banner {
+  background-color: #ffe4e4;
+  color: #a94442;
+  padding: 12px 16px;
+  border: 1px solid #f5c2c7;
+  margin: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+}
+

@@ -1,0 +1,1086 @@
+/*Claim creation*/
+.tabbox .tabscliams {
+  margin-left: 0px;
+}
+.sidebar-nav {
+  width: 170px;
+  overflow: auto;
+  height: Calc(100vh - 100px);
+}
+.cliamtb {
+  border-bottom: 1px solid #ccc;
+  margin-left: 20px;
+}
+.cliamtb > li.active > a {
+  background: transparent;
+  color: #000;
+  border-bottom: 3px solid #113e70;
+  border-radius: 0;
+}
+.cliamtb > li a:hover,
+.cliamtb > li.active > a {
+  background: transparent;
+}
+.cliamtb > li > a {
+  padding: 5px 15px;
+}
+.claimpanel {
+  display: flex;
+}
+.claimfirst {
+  flex: 1;
+  padding: 10px;
+}
+
+.chatpanel {
+  flex: 1;
+  max-width: 280px;
+  padding: 5px;
+  position: relative;
+  border-left: 1px solid #ccc;
+}
+.listcliams {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: baseline;
+  flex: 1;
+  padding: 0;
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
+.listcliams li {
+  list-style: none;
+  font-size: 13px;
+  padding-right: 10px;
+}
+.listcliams li.active {
+  background: #113e80;
+  color: #fff;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+.summarybtns > button {
+  background-color: #fff;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+.claimsubpanel {
+  display: flex;
+  background-color: #f6f6f6;
+  padding: 5px 0px;
+  margin-right: 10px;
+}
+.infocliamstatus {
+  background-color: #fff;
+}
+.infocliamstatus > .table > thead > tr > th {
+  font-size: 12px;
+}
+.infocliamstatus > .table > tbody > tr > td {
+  font-size: 11px;
+}
+.infocliamtable {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/*callsheet*/
+.cliamcallsheet {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  /* height:53vh; */
+  width: 96%;
+  margin: 0 auto;
+  margin-top: 14px;
+}
+.cliamleftside {
+  padding: 5px 10px 10px 10px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.callshettdetails {
+  padding: 5px 10px 10px 10px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.callnotesheder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.callnotesheder > h4 {
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+}
+.callnotesheder > .checkbox {
+  margin-right: 10px;
+  margin: 0;
+}
+.callshtnotebox {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 4px;
+}
+.callshtnotebox > span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.callshtnotebox > .copycontent {
+  text-align: right;
+  font-size: 12px;
+}
+.w20 {
+  width: 20px;
+}
+.cliamnumber {
+  font-size: 12px;
+  color: #000;
+  font-weight: bold !important;
+}
+/* .cliamcheckbox{
+   margin:0px -16px 0 !important;
+}
+ */
+
+/*Call details*/
+.calldetailselect {
+  border-radius: 4px;
+  width: 100%;
+  padding: 3px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  margin-bottom: 40px;
+}
+.calldetailsubmit {
+  background-color: #113e70 !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 4px !important;
+  padding: 2px 10px !important;
+  margin: 0 !important;
+}
+.btn-normal {
+  border: none !important;
+  background-color: transparent !important;
+  color: #000 !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+/*chatbox*/
+.infochatdetails {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.swithbtns {
+  border: none;
+  background-color: #fff;
+  color: #000;
+  font-size: 11px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  line-height: 0px;
+  padding: 4px;
+  height: 20px;
+}
+.infochatdetails > h4 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+}
+.alignmentchatpanel {
+  display: flex;
+  font-size: 12px;
+  gap: 5px;
+  align-items: center;
+}
+.infopanel_overalltext {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  width: 95%;
+  margin: auto;
+}
+.infopanelchattext {
+  display: block;
+  font-size: 11px;
+  background: #eee;
+  border-radius: 4px;
+  height: auto;
+  padding: 4px;
+}
+.chattextonly {
+  margin-top: 10px;
+}
+.chatyes {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 2px 6px;
+  font-size: 11px;
+}
+.chatno {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 2px 6px;
+  font-size: 11px;
+}
+.chatdetailstatus {
+  /* border-top: 1px solid #ccc; */
+  padding-top: 10px;
+  text-align: right;
+}
+.callconnect {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 3px;
+  font-size: 11px;
+}
+.btnportal {
+  background: #fff;
+  border: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+.chatstartpanel > div > h4 {
+  font-size: 14px;
+}
+.chatstartpanel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+}
+.cliamlistpanel {
+  position: relative;
+}
+.claimtabsearch {
+  position: absolute;
+  right: 6px;
+  top: 3px;
+  background: #eee;
+  padding: 2px;
+  border-radius: 3px;
+}
+.cliam_leftarrow {
+  width: 24px;
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  z-index: 999;
+}
+.resizepanel {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background: #eee;
+}
+.wtickmarkchat {
+  width: 15px;
+  border: 1px solid #ccc;
+  background: #13b235;
+  border-radius: 50%;
+}
+.wclosechat {
+  width: 15px;
+  border: 1px solid #ccc;
+  background: #ff1010;
+  border-radius: 50%;
+}
+.doticon {
+  width: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #eeee;
+}
+.chaticons {
+  width: 20px;
+  height: 20px;
+}
+
+.encouterpananel:last-child {
+  border-bottom: 0px;
+}
+
+/*canned notes*/
+
+.table_newformat > .table > thead > tr > th,
+.table_newformat > .table > tbody > tr > td {
+  font-size: 12px;
+}
+.Gridpanel {
+  margin-right: 20px;
+  margin-top: 0px;
+  position: relative;
+  /* width: 86%; */
+}
+.tabslevel > li.active {
+  background-color: #113e70;
+  /* padding:5px; */
+  border-radius: 5px;
+  color: #fff;
+}
+.tabslevel {
+  margin-top: 0px !important;
+}
+.notepanel {
+  width: 20px;
+}
+.callnotes {
+  display: flex;
+}
+.callnotepanel {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+.info_note > h3 {
+  font-size: 15px;
+  margin: 0;
+}
+.cancel_image {
+  width: 20px;
+  cursor: pointer;
+}
+.taxnumber > span {
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 3px 5px;
+}
+.taxnumber > .active {
+  background-color: #b7ccef6e;
+  border: 2px solid #9abcf0;
+}
+.taxnumber {
+  display: grid;
+  grid-template-columns: auto 20px;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.callsection {
+  padding: 10px;
+  max-width: 270px;
+  flex: 270px;
+}
+.textfield {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+.callsheet_dropdown {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  align-items: center;
+  margin-top: 10px;
+}
+.callsheet_dropdown > label {
+  font-size: 12px;
+  margin: 0;
+}
+.m5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.custom_select {
+  width: 100%;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.boxnote {
+  background: #fff;
+  border: 1px solid #ccc;
+  height: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  position: relative;
+}
+.copyimage {
+  width: 30px;
+}
+.copypanel {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.btnsubmit {
+  background-color: #113e70 !important;
+  color: #fff;
+  border: none;
+  padding: 4px 13px;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 10 px;
+}
+.button_section > button {
+  border: none;
+  margin-right: 5px;
+  background: transparent;
+}
+.button_section {
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+}
+.table_newformat {
+  flex: 1;
+  position: relative;
+}
+
+.filtercontent {
+  display: flex;
+}
+.filtercontent > h4 {
+  flex: 300px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #000;
+}
+.filtercontent > img {
+  width: 36px;
+}
+.complete {
+  border-bottom: 1px solid #ccc;
+}
+.complete::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+.default_view {
+  border: 1px solid #113e70;
+  padding: 3px;
+  border-radius: 4px;
+}
+.cannednotes {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 300px;
+  right: 2px;
+  padding: 10px;
+}
+.canned_notespannel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.closeimage {
+  width: 20px;
+}
+.calltypes > label {
+  font-size: 12px;
+}
+.add_new {
+  padding: 2px 10px;
+  border: 1px solid #ccc;
+  background: transparent;
+  border-radius: 5px;
+}
+.bluetag {
+  background-color: #b7ccefab;
+  border: 2px solid #9abcf0;
+  padding: 4px;
+  border-radius: 10px;
+  font-size: 11px;
+  color: #000;
+}
+
+.Yellowtag {
+  background-color: #fae9c6;
+  border-color: #fae9c6;
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #000;
+}
+.contentbox {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.contentbox > p {
+  padding: 10px;
+}
+.selected_deletebutton {
+  text-align: right;
+  border-top: 1px solid #ccc;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+.deletebutton {
+  width: 20px;
+}
+.add_callsheet {
+  border: none;
+  background: #113e70;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 2px 6px;
+}
+.callsheetarrow {
+  border: none;
+  background: #113e70;
+  color: #fff;
+  border-radius: 5px;
+  width: 20px;
+  vertical-align: bottom;
+}
+
+.canned_newnotes {
+  right: 310px;
+  width: 400px;
+}
+
+.info_bindvarible {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  padding: 5px;
+}
+.info_bindvarible > div {
+  border: 1px solid #edf4fb;
+  font-size: 12px;
+  width: 100%;
+  background: #edf4fb;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 10px;
+  border: 1px solid #3198f8;
+}
+.bindvarible_header {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.bindvarible_header > h3 {
+  margin: 0;
+  font-size: 15px;
+  padding: 6px;
+}
+
+.bindvariable_lov > div {
+  border: 1px solid #edf4fb;
+  font-size: 12px;
+  width: 100%;
+  background: #ffeeca;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 10px;
+  border: 1px solid #ffeeca;
+}
+
+.arrowexpand {
+  position: absolute;
+  top: 44%;
+  left: 0px;
+  width: 15px;
+  height: 50px;
+  background: #113e70;
+  z-index: 1;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.rotatearrow {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  vertical-align: middle;
+  top: 10px;
+}
+
+/*summarycontent*/
+.account_summary {
+  background: #fff;
+  padding: 10px;
+  min-height: 200px;
+}
+.account_summary > h4 {
+  color: #000;
+  font-size: 13px;
+  font-weight: bold;
+}
+.info_precall > span {
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+}
+.info_nextaction > span {
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+}
+button.summarycontent.active {
+  background-color: #113e70;
+  color: #fff;
+}
+
+/*History*/
+.history_overall {
+  padding: 10px;
+  background-color: #fff;
+  min-height: 200px;
+}
+
+.dothistory {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #ccc;
+  display: block;
+  margin-top: 5px;
+}
+.info_historycontent {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+.historysector > h4 {
+  margin: 0;
+  font-size: 12px;
+  color: #000;
+  font-weight: bold;
+}
+.historysector > span {
+  font-size: 12px;
+}
+.historypascontent {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+button.historyclickevent.active {
+  background: #113e70;
+  color: #fff;
+}
+.info_precall {
+  max-height: 150px;
+  overflow: auto;
+}
+
+.highlight {
+  width: 100%;
+}
+.highlight > .arrowexpand > .rotatearrow {
+  transform: rotate(180deg);
+}
+
+.borderpanel {
+  border: 2px solid #ccc;
+  border-radius: 19px;
+  padding: 5px;
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  opacity: 0.85;
+  background: #ededed94;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.chatcontent_scrollbar {
+  height: 83%;
+  overflow: auto;
+  position: absolute;
+  bottom: 0;
+  top: 60px;
+}
+.chatpanelfixedbottom_section {
+  border-top: 1px solid #ccc;
+  position: absolute;
+  width: 100%;
+  padding-left: 10px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* ::-webkit-scrollbar {
+  width:5px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background:#113e70;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background:#113e70;
+}
+
+.leftsidebar{
+width:250px;
+} */
+
+/*Matrix Page*/
+.matrixlevel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.boxmatrix {
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px;
+}
+
+/*last custom code */
+
+.dx-datagrid-headers .dx-datagrid-table .dx-row > td {
+  padding-bottom: 5px !important;
+}
+.dx-datagrid-content .dx-datagrid-table .dx-row > td,
+.dx-datagrid-content .dx-datagrid-table .dx-row > tr > td {
+  vertical-align: bottom !important;
+}
+.calldetailsubmit {
+  width: 60px !important;
+  text-align: center !important;
+  /* padding-right: 0px !important; */
+  height: 30px !important;
+}
+.cliamcheckbox {
+  vertical-align: super;
+  margin-bottom: 10px;
+}
+.innercheck .dx-checkbox-icon {
+  margin: 0 !important;
+}
+#innertab {
+  position: relative;
+}
+#innertab .dx-tab-selected {
+  background-color: #113e70 !important;
+  border-radius: 5px;
+  line-height: 10px !important;
+  margin: 0;
+  padding: 0;
+  padding-top: 0px;
+  border-bottom: none !important;
+}
+#innertab .dx-tab-selected .dx-tab-text-span {
+  color: #fff !important;
+}
+.tab-container {
+  margin-top: 10px !important;
+}
+.tab-container .dx-tabs-wrapper {
+  padding: 14px !important;
+}
+.summarybtns {
+  position: absolute;
+  right: 10px;
+  top: 15px !important;
+}
+.callnotesheder .dx-checkbox-icon {
+  margin: 0px;
+}
+.dx-checkbox-text {
+  font-weight: bold;
+  color: #000;
+  font-size: 11px !important;
+}
+.infocalldropdown > select {
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+}
+.encouterpananel > div > span {
+  display: block;
+  color: #000 !important;
+  font-weight: bold;
+  font-size: 11px !important;
+}
+.listbox > label {
+  font-size: 11px !important;
+  color: #837f7f;
+  font-weight: 500;
+}
+.btn-normal {
+  border: 1px solid #113e70 !important;
+  height: 28px;
+}
+.dx-button-has-text .dx-button-content {
+  padding-inline-end: 2px !important;
+}
+.dx-texteditor-input {
+  min-height: 28px !important;
+}
+.textareanotes {
+  height: 70vh;
+  display: grid;
+  overflow: auto;
+}
+#maintab .dx-tabpanel-tabs {
+  width: 874px !important;
+}
+.cliamlistpanel {
+  margin-top: 10px;
+}
+#innertab .dx-tabpanel-tabs {
+  width: auto !important ;
+}
+
+.callsection {
+  padding: 10px;
+  max-width: 270px;
+  flex: 270px 1;
+  z-index: 999;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.callsheet_scroll {
+  height: 78vh;
+  overflow: auto;
+  /* overflow-x: hidden; */
+}
+
+.info_note > h3 {
+  font-size: 13px !important;
+  margin: 0;
+  font-weight: bold;
+}
+.cancel_image {
+  width: 16px !important;
+}
+.m5 {
+  padding-top: 5px !important;
+  padding-bottom: 0px !important;
+  width: 95%;
+}
+.boxnote {
+  height: 219px !important;
+}
+
+.button_section .btnhold,
+.button_section .btnsave,
+.button_section .btnreset {
+  border: 1px solid #113e70 !important;
+  padding: 5px !important;
+  border-radius: 5px;
+  background-color: transparent !important;
+  color: #000 !important;
+}
+.dx-editor-outlined.dx-texteditor-with-floating-label.dx-texteditor-empty.dx-dropdowneditor-active
+  .dx-label
+  span,
+.dx-editor-outlined.dx-texteditor-with-floating-label.dx-texteditor-empty.dx-state-focused
+  .dx-label
+  span {
+  top: -4px !important;
+  color: #000 !important;
+}
+.dx-button {
+  border: 1px solid #ccc !important;
+}
+
+.boxnote {
+  height: 175px !important;
+  margin-top: 20px !important;
+}
+.boxnote textarea {
+  height: 140px !important;
+  border: none !important;
+}
+.notepad_blue > img {
+  width: 15px !important;
+}
+.notepad_blue {
+  background-color: #3198f8;
+  /* margin-top: 10px; */
+  width: 120px;
+  border-radius: 5px;
+  font-size: 12px;
+  padding-top: 4px;
+  padding-bottom: 7px;
+}
+.button_section > button {
+  border: 1px solid #ccc !important;
+  margin-right: 5px;
+  background: transparent;
+  margin-left: 5px;
+  height: 30px;
+  font-size: 11px;
+  background-color: #fff;
+  width: 43px;
+}
+.notepad_blue > img {
+  width: 15px !important;
+  margin-left: 5px !important;
+}
+.notepad_blue > label {
+  color: #fff;
+  vertical-align: text-top;
+  margin-left: 3px !important;
+}
+.innernotes {
+  position: relative;
+}
+
+.copycontent {
+  position: absolute;
+  bottom: -20px;
+  right: 11px;
+  z-index: 1;
+
+  padding: 5px;
+  height: 25px;
+}
+.callnotesfullview {
+  position: absolute;
+  bottom: -20px;
+  left: -3px;
+  z-index: 1;
+
+  padding: 5px;
+  height: 25px;
+}
+.btnsubmit {
+  background-color: #113e70 !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 4px !important;
+  padding: 2px 10px !important;
+  margin: 0 !important;
+}
+
+.knolwindowsection {
+  padding: 10px;
+  max-width: 100%;
+  flex: 100%;
+}
+.knol_header {
+  width: 100%;
+  padding: 10px;
+}
+.knol_header_close {
+  float: right;
+  margin-top: -15px;
+}
+
+/*23-1-2025*/
+.dx-item-content .dx-toolbar-item-content {
+  font-size: 18px !important;
+  background-color: red I !important;
+  font-weight: bold !important;
+}
+.cannednotesbtn {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+.cannedsavenote {
+  background-color: #113e70 !important;
+  color: #fff !important;
+}
+.cannedsavenote .dx-button-text {
+  width: 100px;
+  line-height: 10px;
+}
+.cannedgetdetail .dx-button-text {
+  width: 100px;
+  line-height: 10px;
+}
+.callsheetbtngroups {
+  display: flex;
+}
+.btnsavecannednotes {
+  width: 120px !important;
+}
+.parentclass .dx-button .dx-button-content {
+  padding: 0px !important;
+  line-height:10px !important;
+  margin-top:3px;
+  text-align:left;
+  display:block;
+}
+
+.tickettextrea {
+  z-index: 1;
+}
+.horizontalevel {
+  align-items: center;
+}
+
+.horizontalevel .btnsubmit {
+  height: 25px;
+  font-family: "proxima_nova_rgregular";
+  line-height: 0px;
+}
+.dx-toolbar .dx-toolbar-items-container {
+  margin-bottom: 5px;
+  height: 40px;
+}
+.dx-button-mode-outlined .dx-icon {
+  margin: 0px !important;
+}
+.dx-tabpanel-tabs-position-top .dx-tabpanel-tab.dx-state-hover::after {
+  border-top: none !important;
+}
+#innertab .dx-tab-selected .dx-tab-text-span {
+  padding: 10px;
+}
+.infocliamtable .account_summary {
+  line-height: 20px;
+  margin-left: 10px;
+}
+.grid_view_style {
+  padding: 10px !important;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 12px;
+  height: 100%;
+}
+.btnapplycontent{
+  display:flex;
+}
+.btnapplycontent .dx-checkbox-text {
+color:#fff;
+}
+/*custom style select (20-3-2025)*/
+.dx-dropdowneditor-button{
+  background-color:transparent !important;
+}
+.dx-selectbox-container{
+  border:1px solid #ccc;
+  border-radius:3px;
+}
+/* .dx-texteditor-input{
+  border:none !important;
+} */
+ 
+.btnapplycontent span.dx-checkbox-icon{
+  margin:0;
+}
